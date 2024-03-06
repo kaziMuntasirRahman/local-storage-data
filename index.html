@@ -10,19 +10,20 @@
 </head>
 
 <body class="p-10 flex flex-col md:flex-row gap-10 items-start">
-  <div class="flex flex-col max-w-min gap-3">
+  <div class="flex flex-col max-w-min items-center gap-3">
     <input class="px-2" type="text" name="" id="product-name" placeholder="Product Name">
     <input class="px-2" type="number" name="" id="product-quantity" placeholder="Product Quantity">
-    <button onclick="addToCart()" class="bg-cyan-400 rounded text-black">add to cart</button>
+    <button onclick="addToCart()" class="bg-cyan-400 rounded-lg text-black px-3">add to cart</button>
   </div>
   <div id="cart-container" class="flex flex-col gap-3 bg-gray-100 rounded-sm text-black p-2 items-center">
-    <div class="flex justify-between gap-5 bg-gray-200 rounded-sm px-1">
+    <div class="flex justify-between gap-10 bg-gray-200 rounded-sm">
       <h2>Product Name</h2>
       <h2>Amount</h2>
     </div>
     <div id="carts" class="flex flex-col  gap-1 bg-gray-100 rounded-sm text-black w-full">
     </div>
-    <button onclick="clearData()" class="bg-cyan-400 rounded-2xl text-black px-3 shadow-inner">Clear Local Storage Data</button>
+    <button onclick="clearLocalStorageData()" class="bg-cyan-400 rounded-2xl text-black px-3 shadow-inner">Clear Local
+      Storage Data</button>
   </div>
 
   <script src="cart.js"></script>
